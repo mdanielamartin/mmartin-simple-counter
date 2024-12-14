@@ -1,12 +1,82 @@
+body {
+    background-color: black;
+}
 
-/* 
+.counter {
+    font-size: 10vw;
+    color: white;
+    letter-spacing: 40px;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.title{
+    font-size: 2vw;
+    color: white;
+    display: inline-block;
+}
+.material-symbols-outlined {
+    font-size: 10vw;
+    color: white;
+    display: inline-block;
+    margin-top: 6vh;
+    margin-right: 3vw;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
 
-*/
+
+label{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.input-block{
+    display: grid;
+    justify-content: center;
+    margin-left: 8px;
+    margin-right: 8px;
+
+}
+.input-block > input {
+    height: 60px;
+    width: 120px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5px;
+
+
+}
+.button-group > button {
+    height: 100%;
+    width: 20%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.display > div {
+    margin: 0px 30px auto 30px;
+    text-align: center;
+}
+
+.display-num > div:first-child {
+    font-size: 30px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.display-num > div:nth-child(2) {
+    font-size: 70px;
+    align-items: center;
+}
+
+.set-alert > button {
+    font-size:15px;
+    font-weight: bold;
+    height:40%;
+    width:20%;
+    margin-right: 20px;
+}
