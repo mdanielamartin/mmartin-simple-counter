@@ -64,7 +64,7 @@ const Timer = () => {
     return (
         <div className="container-fluid">
             <div className="row">
-                <div className="col-lg-6 col-sm-12 bg-secondary py-3 d-flex justify-content-center align-items-center">
+                <div className="col-lg-6 col-sm-12 py-3 d-flex justify-content-center align-items-center bg-change">
                     <div className="input-block">
                         <label htmlFor='hours'>Hours</label>
                         <input type="number" placeholder="00" value={hour.padStart(2, '0')} onChange={validateHour} id='hours'></input>

@@ -5,7 +5,13 @@ body {
 .counter {
     font-size: 10vw;
     color: white;
-    letter-spacing: 40px;
+    display: flex;
+}
+
+.digit {
+    padding: 0px 10px 0px 10px;
+    margin: 10px 10px 10px 10px;
+    background-color: rgb(99, 99, 106);
 }
 
 .title{
@@ -33,7 +39,9 @@ label{
     text-align: center;
 }
 
-
+.bg-change{
+    background-color: rgb(99, 99, 106);
+}
 .input-block{
     display: grid;
     justify-content: center;

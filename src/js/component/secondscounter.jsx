@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 
 const SecondsCounter = ({ time }) => {
+
+    const [counterDisplay, setDisplay] = useState(time.toString().padStart(6, '0').split(''))
+
+    useEffect(() => {
+        setDisplay(time.toString().padStart(6, '0').split(''))
+    }, [time])
+
     return (
         <div>
             <div className="jumbotron bg-dark">
@@ -12,7 +19,11 @@ const SecondsCounter = ({ time }) => {
                         <span className="material-symbols-outlined">
                             schedule
                         </span>
-                        <span className="counter">{time}</span>
+                        <span className="counter">
+                            {counterDisplay.map((digit, index) => {
+                                return <div key={index} className="digit">{digit}</div>
+                            })}
+                        </span>
                     </div>
                 </div>
             </div>

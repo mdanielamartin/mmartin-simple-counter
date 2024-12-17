@@ -4,12 +4,13 @@ import Timer from "./timer";
 
 
 const Home = () => {
-	const [count, setCount] = useState('000000');
+	const [count, setCount] = useState(0);
+
 	const incrementTime = () => {
-		if (count === '999999') {
-			setCount('000000')
+		if (count === 999999) {
+			setCount(0)
 		}
-		setCount(prev => ((parseInt(prev) + 1).toString()).padStart(6, '0'))
+		setCount(prev => prev + 1);
 	}
 	useEffect(() => {
 		const renderInterval = setInterval(incrementTime, 1000);
